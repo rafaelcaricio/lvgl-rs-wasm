@@ -1,4 +1,6 @@
+# LVGL Rust to WASM
 
+Example of LVLG in Rust compiling to WASM.
 
 ## Setup
 
