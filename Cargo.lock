@@ -398,6 +398,7 @@ dependencies = [
 [[package]]
 name = "lvgl"
 version = "0.4.0"
+source = "git+https://github.com/rafaelcaricio/lvgl-rs.git?branch=emscripten#76d485b68a25d57cfe70d54a25f0569a6ef9b61e"
 dependencies = [
  "bitflags",
  "cstr_core",
@@ -412,6 +413,7 @@ dependencies = [
 [[package]]
 name = "lvgl-codegen"
 version = "0.4.0"
+source = "git+https://github.com/rafaelcaricio/lvgl-rs.git?branch=emscripten#76d485b68a25d57cfe70d54a25f0569a6ef9b61e"
 dependencies = [
  "Inflector",
  "lazy_static",
@@ -434,6 +436,7 @@ dependencies = [
 [[package]]
 name = "lvgl-sys"
 version = "0.4.0"
+source = "git+https://github.com/rafaelcaricio/lvgl-rs.git?branch=emscripten#76d485b68a25d57cfe70d54a25f0569a6ef9b61e"
 dependencies = [
  "bindgen",
  "cc",

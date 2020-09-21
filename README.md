@@ -28,6 +28,11 @@ https://emscripten.org/docs/getting_started/downloads.html
 $ embuilder.py build sdl2
 ```
 
+- Compile the example project:
+```
+cargo +nightly build --target=wasm32-unknown-emscripten
+```
+
 References:
 - https://puddleofcode.com/story/definitive-guide-to-rust-sdl2-and-emscriptem
 

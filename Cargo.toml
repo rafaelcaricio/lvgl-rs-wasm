@@ -12,6 +12,6 @@ lto = true
 
 [dependencies]
 cstr_core = { version = "0.2.0", features = ["alloc"] }
-lvgl = { version = "0.4", path = "../lvgl-rs/lvgl" }
+lvgl = { version = "0.4", git = "https://github.com/rafaelcaricio/lvgl-rs" , branch = "emscripten" }
 embedded-graphics = "0.6"
 embedded-graphics-simulator = "0.2"
