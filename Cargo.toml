@@ -1,0 +1,17 @@
+[package]
+name = "lvgl-example"
+version = "0.1.0"
+authors = ["Rafael Caricio <rafael@caricio.com>"]
+edition = "2018"
+
+[profile.release]
+# This makes the compiled code faster and smaller, but it makes compiling slower,
+# so it's only enabled in release mode.
+lto = true
+
+
+[dependencies]
+cstr_core = { version = "0.2.0", features = ["alloc"] }
+lvgl = { version = "0.4", path = "../lvgl-rs/lvgl" }
+embedded-graphics = "0.6"
+embedded-graphics-simulator = "0.2"

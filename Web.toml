@@ -1,0 +1,17 @@
+# The default value of `--target` used when building this crate
+# in cases where it's not specified on the command line.
+default-target = "wasm32-unknown-emscripten"
+
+[cargo-web]
+# Asserts the minimum required version of `cargo-web` necessary
+# to compile this crate; supported since 0.6.0.
+minimum-version = "0.6.0"
+
+# These will only take effect on *-emscripten targets.
+[target.emscripten]
+# You can have a target-specific `prepend-js` key.
+# `prepend-js = "src/emscripten_runtime.js"`
+
+# This will enable Emscripten's SDL2 port. Consult Emscripten's documentation
+# for more details.
+link-args = ["-s", "USE_SDL=2"]
