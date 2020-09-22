@@ -7,8 +7,8 @@ use embedded_graphics_simulator::{
 use lvgl::style::Style;
 use lvgl::widgets::{Bar, Label, LabelAlign};
 use lvgl::{self, Align, Animation, Color, Event, LvError, Part, State, Widget, UI};
-use std::time::Instant;
-use std::process;
+use std::time::{Instant, Duration};
+use std::{process, thread};
 
 #[cfg(target_os = "emscripten")]
 pub mod emscripten;
@@ -78,6 +78,7 @@ fn main() -> Result<(), LvError> {
             }
         }
 
+        thread::sleep(Duration::from_millis(50));
         ui.tick_inc(loop_started.elapsed());
         loop_started = Instant::now();
     };

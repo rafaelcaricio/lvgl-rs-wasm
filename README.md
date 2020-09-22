@@ -1,6 +1,8 @@
 # LVGL Rust to WASM
 
-Example of LVLG in Rust compiling to WASM.
+Example of LVGL in Rust compiling to WASM. The same project can run natively and in the browser.
+
+Access the live version [here](https://rafaelcaricio.github.io/lvgl-rs-wasm).
 
 ## Setup
 
@@ -28,11 +30,36 @@ https://emscripten.org/docs/getting_started/downloads.html
 $ embuilder.py build sdl2
 ```
 
-- Compile the example project:
+## Compiling
+
+Compile the Web version:
 ```
-cargo +nightly build --target=wasm32-unknown-emscripten
+make web
 ```
 
-References:
+Compile the native version:
+```
+make native
+```
+
+## Running
+
+To access the web version you need to serve the static files as web pages locally. We use `python3` for that. If you
+have [Python 3](https://www.python.org/downloads/) installed, you can run:
+```
+make serve
+```
+
+Now you can access locally the project running at http://localhost:8000/lvgl_example.html .
+
+For running natively, you can do:
+```
+cargo +nightly run --release
+```
+
+
+# References
+- https://gregkatz.github.io/2017-05-20-rust-emscripten.html
+- https://dev.to/kibebr/i-made-a-game-in-c-run-in-a-web-browser-and-so-can-you-4deb
 - https://puddleofcode.com/story/definitive-guide-to-rust-sdl2-and-emscriptem
 
