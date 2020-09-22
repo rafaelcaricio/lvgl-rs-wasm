@@ -2,7 +2,9 @@
 
 Example of LVGL in Rust compiling to WASM. The same project can run natively and in the browser.
 
-Access the live version [here](https://rafaelcaricio.github.io/lvgl-rs-wasm).
+Access the web live version [here](https://rafaelcaricio.github.io/lvgl-rs-wasm).
+
+![Project Running Natively](docs/images/native.png)
 
 ## Setup
 
