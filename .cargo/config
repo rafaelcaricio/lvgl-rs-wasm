@@ -1,0 +1,6 @@
+[target.wasm32-unknown-emscripten]
+rustflags = [
+    "-C", "link-arg=-s",
+    "-C", "link-arg=USE_SDL=2",
+    "-C", "link-arg=-olvgl_example.html",
+]
