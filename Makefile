@@ -1,10 +1,10 @@
 all: web native
 
 web:
-	cargo +nightly build --release --target wasm32-unknown-emscripten
+	cargo build --release --target wasm32-unknown-emscripten
 
 native:
-	cargo +nightly build --release
+	cargo build --release
 
 serve:
 	@echo "Available at http://localhost:8000/lvgl_example.html"
