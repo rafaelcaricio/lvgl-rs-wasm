@@ -56,7 +56,7 @@ Now you can access locally the project running at http://localhost:8000/lvgl_exa
 
 For running natively, you can do:
 ```
-cargo +nightly run --release
+cargo run --release
 ```
 
 
